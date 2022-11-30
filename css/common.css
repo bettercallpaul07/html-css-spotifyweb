@@ -8,10 +8,6 @@
 
 /* REGOLE GENERALI */
 
-* {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .dflex {
     display: flex;
 }
