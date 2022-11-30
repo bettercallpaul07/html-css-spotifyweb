@@ -95,3 +95,7 @@
 .bigtitle {
     font-size: 2em;
 }
+
+.debug {
+    border: 1px dashed red;
+}
