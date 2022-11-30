@@ -1,3 +1,5 @@
+/* REGOLE GENERALI */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,39 +18,25 @@ body {
     }
 
 
-.aside {
-    width: 20vw;
-    background-color: black;
-    height: 100vh;
-    min-height: 400px;
-    padding: 1%;
-}
+/* CONTEINER PRINCIPALE */
 
-
-#main-header {
-    position:fixed;
-    top:0px;
-    right:0px;
-    z-index: 30;
-    background-color: rgba(0, 0, 0, 0.4);
-    height: 10vh;
-    width: 80vw;
-}
 
 #main-container {
     padding-top: 1vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    width: 80vw;
+    width: 85vw;
     background-color: #141922;
     height: 90vh;
     overflow-y: auto;
 }
 
+
 #main-list {
     margin-top: 10vh;
     text-align: center;
 }
+
 
 #main-list ul li {
     display: inline-block;
@@ -59,15 +47,18 @@ body {
     font-size: 0.9em;
 }
 
+
 #main-list ul li:hover {
     color: white;
 }
+
 
 .title-section {
     color: var(--title-color);
     padding-top: 1vw;
     font-weight: bold;
 }
+
 
 .subtitle-section {
     color: var(--text-color);
@@ -76,23 +67,32 @@ body {
     font-size: 0.7em;
 }
 
+
 .album-container {
     padding: 1em 0;
 }
+
 
 .album {
     padding-right: 1vw;
 }
 
+
 .info-album {
     text-align: center;
 }
 
+
 .info-album > h4 {
+    display: inline-block;
     padding: 0.5em;
     color: var(--title-color);
+    font-size: 0.8em;
     font-weight: bold;
+    text-align: center;
+    max-width:fit-content;
 }
+
 
 .info-album > p {
     padding-top: 0.2em;
@@ -103,19 +103,72 @@ body {
 
 
 .album > img {
-    width: calc((80vw/6) - 2vw);
+    width: calc((85vw/6) - 2vw);
     aspect-ratio: 1/1;
 }
 
 
 .album-round > img {
-    width: calc((80vw/6) - 2vw);
+    width: calc((85vw/6) - 2vw);
     aspect-ratio: 1/1;
     border-radius: 50%;
 }
 
+
 .album-round {
     padding-right: 1vw;
+}
+
+
+/* FINE CONTEINER PRINCIPALE */
+
+
+/* BARRA LATERALE */
+
+#logo > img {
+    max-width: 50%;
+}
+
+.aside {
+    width: 15vw;
+    background-color: black;
+    height: 90vh;
+    min-height: 400px;
+    padding: 1%;
+}
+
+.principal-nav li, .playlist-nav li {
+    padding-bottom: 0.8em;
+    color: var(--text-color);
+    list-style: none;
+}
+
+.principal-nav li:first-child, .playlist-nav li:first-child {
+    padding-top: 1.5em;
+}
+
+.asideflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.playlist-nav {
+    flex-grow: 1;
+}
+
+
+/* FINE BARRA LATERALE */
+
+
+
+#main-header {
+    position:fixed;
+    top:0px;
+    right:0px;
+    z-index: 30;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 10vh;
+    width: 85vw;
 }
 
 
