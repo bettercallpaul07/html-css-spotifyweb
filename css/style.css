@@ -44,7 +44,8 @@ body {
     color: var(--text-color);
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.8em;
+    padding-right: 1.3em;
 }
 
 
@@ -147,6 +148,12 @@ body {
     padding-top: 1.5em;
 }
 
+
+.principal-nav ul li > img {
+    width: 25px;
+    vertical-align: middle;
+}
+
 .asideflex {
     display: flex;
     flex-direction: column;
@@ -160,7 +167,6 @@ body {
 /* FINE BARRA LATERALE */
 
 
-
 #main-header {
     position:fixed;
     top:0px;
@@ -168,7 +174,7 @@ body {
     z-index: 30;
     background-color: rgba(0, 0, 0, 0.4);
     height: 10vh;
-    width: 85vw;
+    width: 85%;
 }
 
 
@@ -188,16 +194,13 @@ body {
 
 
 #inplay {
-    width: 10%;
-    height: 100%;
-    border: 1px solid red;
-    display: flex;
-    align-items: center;
-
+    width: 60px;
 }
 
 .inplay-info {
     padding-left: 0.5em;
+    width: 50px;
+
 }
 
 .inplay-info h4 {
@@ -209,31 +212,87 @@ body {
     font-size: 0.5em;
     color: var(--text-color);
     font-weight: bold;
+    max-width: 45px;
 }
 
 
 #inplay img {
-    max-width: 45px;
+    max-width: 50px;
     margin-left: 10px;
     aspect-ratio: 1/1;
 }
 
-#pref-icon {
-    width: 5%;
-    height: 100%;
-    border: 1px solid red;
+.playicon {
+    width: 80px;
+    color: white;
+    text-align: right;
+
 }
+
+
+#main-player ul li {
+    list-style: none;
+    display: inline-block;
+}
+
 
 #main-player {
     width: 70%;
     height: 100%;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.button-bar {
+    padding-top: 10px;
+}
+
+.button-bar ul li {
+    padding-left: 30px;
+}
+
+.button-bar ul li button {
+    color: white;
+    background-color: #282828;
+    border: none;
+}
+
+.volume-bar {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 10px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+.progress-bar {
+    width: 50%;
+    height: 0.3em;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .time {
+    color: white;
+    font-size: 0.7em;
+    margin-left: 20px;
+    margin-right: 20px;
+
+  }
+
+
 
 #config-icon {
     width: 15%;
-    height: 100%;
-    border: 1px solid red;
+    color: white;
+    vertical-align: middle;
+}
+
+#config-icon > i {
+    margin-right: 10px;
 }
 
 

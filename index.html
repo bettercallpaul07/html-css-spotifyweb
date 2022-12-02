@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/common.css">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -21,9 +23,18 @@
             </div>
             <nav class="principal-nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Cerca</li>
-                    <li>La tua libreria</li>
+                    <li>
+                        <img src="img/home.svg" alt="">
+                        Home
+                    </li>
+                    <li>
+                    <img src="img/search.svg" alt="">
+                    Cerca
+                </li>
+                    <li>
+                        <img src="img/libreria.svg" alt="">
+                        La tua libreria
+                    </li>
                 </ul>
             </nav>
 
@@ -180,31 +191,71 @@
 
         </main>
         
-        <section id="player" class="dflex">
-
+        <section id="player" class="dflex alicenter">
             <div id="inplay">
-                <div>
-                    <img src="img/sinister.jpeg" alt="InPlay">
-                </div>
-                <div class="inplay-info">
-                    <h4>Sinister</h4>
-                    <p>Brano Nome</p>
-                </div>
-
-
-
+                <img src="img/sinister.jpeg" alt="InPlay">
+            </div>
+            <div class="inplay-info">
+                <h4>Sinister</h4>
+                <p>Brano Nome</p>
+            </div>
+            <div class="playicon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
             </div>
 
-            <div id="pref-icon">
-
-            </div>
 
             <div id="main-player">
+                <div class="button-bar">
+                    <ul>
+                        <li>
+                            <button>
+                                <i class="fa-solid fa-shuffle"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fa-solid fa-backward-step"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fa-regular fa-circle-play fa-2x"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fa-solid fa-forward-step"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                        </li>
 
+                    </ul>
+                </div>
+
+                <div class="volume-bar">
+                    <div class="time">
+                        <span class="time-small">0:25</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-value">
+                        </div>
+                    </div>
+                    <div class="time">
+                        <span class="time-small">4:35</span>
+                    </div>
+
+                </div>
             </div>
 
             <div id="config-icon">
-
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
             </div>
 
         </section>
