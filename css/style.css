@@ -348,6 +348,14 @@ body {
     background-color: white;
   }
 
+  .progress-value {
+    width: 20%;
+    height: 0.3em;
+    border-radius: 10px;
+    background-color: var(--text-color);
+
+  }
+
   .time {
     color: white;
     font-size: 0.7em;
@@ -358,11 +366,11 @@ body {
 
 
 #config-icon {
-    width: 15%;
+    width: 20%;
     color: white;
-    vertical-align: middle;
     display: flex;
     align-items: center;
+    justify-content: end;
 }
 
 #config-icon > i {
